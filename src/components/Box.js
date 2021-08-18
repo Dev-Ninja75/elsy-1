@@ -10,6 +10,13 @@ class Box extends React.Component {
           {this.props.icon}
         </span>
         <p>{this.props.value} {this.props.unit}</p>
+
+        <input type="range" 
+          min= {20} 
+          max= {200}
+          value={this.props.value} 
+          onChange={this.props.onChange}/>
+
       </div>
     )
   }
